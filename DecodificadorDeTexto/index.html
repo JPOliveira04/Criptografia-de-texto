@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Insira o texto para ser criptografado</h1>
+            <p class="note">Lembre-se: Não use acentos nem letras maiúsculas.</p>
+            <textarea id="textoOriginal"></textarea>
+            <div class="botoes">
+                <button onclick="criptTexto()">Criptografar</button>
+                <button onclick="descriptTexto()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <h1>Texto Modificado</h1>
+            <textarea id="textoModificado" readonly></textarea>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+
+    <script src="cod.js"></script>
+</body>
+</html>
+
